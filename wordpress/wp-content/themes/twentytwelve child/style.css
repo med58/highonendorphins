@@ -1,0 +1,11 @@
+/*
+Theme Name:     My Twenty Twelve Child
+Theme URI:		http://www.highonendorphins.com/
+Description:    My Child Theme
+Author:         Mark Dennin
+Author URI:		http://www.highonendorphins.com/about
+Template:       twentytwelve
+Version:        0.1.0
+*/
+
+@import url("..twentytwelve/style.css");
