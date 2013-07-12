@@ -38,6 +38,8 @@ function my_custom_post_tape() {
 	register_post_type( 'tape', $args );	
 }
 
+add_action( 'load-post.php', 'tp_post_meta_boxes_setup' );
+add_action( 'load-post-new.php', 'tp_post_meta_boxes_setup' );
 
 function tp_post_meta_boxes_setup() {
 
