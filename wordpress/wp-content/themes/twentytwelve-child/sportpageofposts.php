@@ -1,9 +1,9 @@
 <?php
 /*
-Template Name: Page Of Posts
+Template Name: Page Of Posts Sport
 */
 
-/* This example is for a child theme of Twenty twelve: 
+/* This example is for a child theme of Twenty Twelve: 
 *  You'll need to adapt it the HTML structure of your own theme.
 */
 
@@ -30,7 +30,7 @@ get_header(); ?>
 
         $args = array(
             // Change these category SLUGS to suit your use.
-            'category_name' => 'music, videos', 
+            'category_name' => 'sports', 
             'paged' => $paged
         );
 

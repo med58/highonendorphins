@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Page Of Post Pol
+Template Name: Page Of Posts Pop
 */
 
 /* This example is for a child theme of Twenty Twelve: 
@@ -9,8 +9,8 @@ Template Name: Page Of Post Pol
 
 get_header(); ?>
 
-  <div id="primary" class="content-area">
-    <div id="content" class="site-content" role="main">
+	<div id="primary" class="content-area">
+		<div id="content" class="site-content" role="main">
         <?php 
         /* The loop: the_post retrieves the content
          * of the new Page you created to list the posts,
@@ -30,26 +30,26 @@ get_header(); ?>
 
         $args = array(
             // Change these category SLUGS to suit your use.
-            'category_name' => 'politics', 
+            'category_name' => 'music, movies, celebs, tv', 
             'paged' => $paged
         );
 
         $list_of_posts = new WP_Query( $args );
         ?>
         <?php if ( $list_of_posts->have_posts() ) : ?>
-      <?php /* The loop */ ?>
-      <?php while ( $list_of_posts->have_posts() ) : $list_of_posts->the_post(); ?>
-        <?php // Display content of posts ?>
-        <?php get_template_part( 'content', get_post_format() ); ?>
-      <?php endwhile; ?>
+			<?php /* The loop */ ?>
+			<?php while ( $list_of_posts->have_posts() ) : $list_of_posts->the_post(); ?>
+				<?php // Display content of posts ?>
+				<?php get_template_part( 'content', get_post_format() ); ?>
+			<?php endwhile; ?>
 
-      <?php twentytwelve_paging_nav(); ?>
+			<?php twentytwelve_paging_nav(); ?>
 
-    <?php else : ?>
-      <?php get_template_part( 'content', 'none' ); ?>
-    <?php endif; ?>
+		<?php else : ?>
+			<?php get_template_part( 'content', 'none' ); ?>
+		<?php endif; ?>
 
-    </div><!-- #content -->
-  </div><!-- #primary -->
+		</div><!-- #content -->
+	</div><!-- #primary -->
 
 <?php get_footer(); ?>
