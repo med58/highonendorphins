@@ -52,7 +52,7 @@ function add_tp_meta_boxes() {
 
 	add_meta_box(
 		'tp-ratings',
-		esc_html__( 'Ratings', 'example'),
+		'Ratings',
 		'tp_ratings_meta_box',
 		'tp',
 		'side',
