@@ -9,3 +9,7 @@ Version:        0.1.0
 */
 
 @import url("../twentytwelve/style.css");
+
+body.custom-background {
+background-color: #e6e6e6;
+}
