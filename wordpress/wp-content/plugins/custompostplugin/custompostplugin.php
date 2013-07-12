@@ -60,7 +60,7 @@ function add_tp_meta_boxes() {
 	);
 }
 
-function tp_ratings_meta_box( $object, $box ) { ?>
+function tp_ratings_meta_box() { 
 
 	<?php wp_nonce_field( basename( __FILE__ ), 'tp_ratings_nonce' ); ?>
 
