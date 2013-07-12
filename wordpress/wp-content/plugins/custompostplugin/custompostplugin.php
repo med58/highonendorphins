@@ -61,6 +61,29 @@ function add_tp_meta_boxes() {
 }
 
 function tp_ratings_meta_box() { 
+	global $post;
+
+	// Noncename needed to verify where the data originated
+7
+    echo '<input type="hidden" name="tpmeta_noncename" id="tpmeta_noncename" value="' .
+8
+    wp_create_nonce( plugin_basename(__FILE__) ) . '" />';
+9
+     
+10
+    // Get the location data if its already been entered
+11
+    $location = get_post_meta($post->ID, '_location', true);
+12
+     
+13
+    // Echo out the field
+14
+    echo '<input type="text" name="_location" value="' . $location  . '" class="widefat" />';
+15
+ 
+16
+}
 
 
 
