@@ -1,55 +1,55 @@
 <?php
 /*
-Template Name: Page Of Posts Politics
+Template Name: Page Of Posts
+*/
+
+/* This example is for a child theme of Twenty Twelve: 
+*  You'll need to adapt it the HTML structure of your own theme.
 */
 
 get_header(); ?>
-<div id="content" class="narrowcolumn">
-<?php
-if ( is_page() ) {
-    $category = get_post_meta( $posts[0]->ID, 'category', true );
-    $cat = get_cat_ID( $category );
-}
-if ( $cat ) :
-    $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
-    $post_per_page = 4; // -1 shows all posts
-    $do_not_show_stickies = 1; // 0 to show stickies
-    $args=array (
-      'category__in' => array( $cat ),
-      'orderby' => 'date',
-      'order' => 'DESC',
-      'paged' => $paged,
-      'posts_per_page' => $post_per_page,
-      'ignore_sticky_posts' => $do_not_show_stickies
-    );
-    $temp = $wp_query; // assign original query to temp variable for later use  
-    global $wp_query;
-    $wp_query = null;
-    $wp_query = new WP_Query( $args ); 
-    if ( $wp_query->have_posts() ) : 
-        while ( $wp_query->have_posts() ) : $wp_query->the_post(); ?>
-        <div <?php post_class() ?> id="post-<?php the_ID(); ?>">
-            <h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-            <small><?php the_time( 'F jS, Y' ) ?> <!-- by <?php the_author() ?> --></small>
-            <div class="entry">
-            <?php the_content( 'Read the rest of this entry »' ); ?>
-            </div>
-            <p class="postmetadata"><?php the_tags( 'Tags: ', ', ', '<br />' ); ?> Posted in <?php the_category( ', ' ) ?> | <?php edit_post_link( 'Edit', '', ' | ' ); ?> <?php comments_popup_link( 'No Comments »', '1 Comment »', '% Comments »' ); ?></p>
-        </div>
-        <?php endwhile; ?>
-    <div class="navigation">
-        <div class="alignleft"><?php next_posts_link( '« Older Entries' ) ?></div>
-        <div class="alignright"><?php previous_posts_link( 'Newer Entries »' ) ?></div>
-    </div>
-  <?php endif; // if ( $wp_query->have_posts() ) ?>
-  <?php $wp_query = $temp; //reset back to original query ?>
 
-<?php else : ?>
-    <h2 class="center">Not Found</h2>
-    <p class="center">Sorry, but you are looking for something that isn't here.</p>
-    <?php get_search_form(); ?>    
-<?php endif; // if ( $cat ) ?>
+  <div id="primary" class="content-area">
+    <div id="content" class="site-content" role="main">
+        <?php 
+        /* The loop: the_post retrieves the content
+         * of the new Page you created to list the posts,
+         * e.g., an intro describing the posts shown listed on this Page..
+         */
+        if ( have_posts() ) :
+            while ( have_posts() ) : the_post();
 
-</div><!-- #content -->
-<?php get_sidebar(); ?>
+              // Display content of page
+              get_template_part( 'content', get_post_format() ); 
+              wp_reset_postdata();
+  
+            endwhile;
+        endif;
+
+        $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+
+        $args = array(
+            // Change these category SLUGS to suit your use.
+            'category_name' => 'politics', 
+            'paged' => $paged
+        );
+
+        $list_of_posts = new WP_Query( $args );
+        ?>
+        <?php if ( $list_of_posts->have_posts() ) : ?>
+      <?php /* The loop */ ?>
+      <?php while ( $list_of_posts->have_posts() ) : $list_of_posts->the_post(); ?>
+        <?php // Display content of posts ?>
+        <?php get_template_part( 'content', get_post_format() ); ?>
+      <?php endwhile; ?>
+
+      <?php twentytwelve_paging_nav(); ?>
+
+    <?php else : ?>
+      <?php get_template_part( 'content', 'none' ); ?>
+    <?php endif; ?>
+
+    </div><!-- #content -->
+  </div><!-- #primary -->
+
 <?php get_footer(); ?>
