@@ -43,12 +43,12 @@ add_action( 'load-post-new.php', 'tp_post_meta_boxes_setup' );
 
 function tp_post_meta_boxes_setup() {
 
-	add_action( 'add_meta_boxes', 'tp_add_post_meta_boxes');
+	add_action( 'add_meta_boxes', 'add_tp_meta_boxes');
 	add_action( 'save_post', 'tp_ratings_save_meta', 10, 2 );
 }
 
 
-function tp_addpost_meta_boxes() {
+function add_tp_meta_boxes() {
 
 	add_meta_box(
 		'tp-ratings',
