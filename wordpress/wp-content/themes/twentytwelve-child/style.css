@@ -10,6 +10,6 @@ Version:        0.1.0
 
 @import url("../twentytwelve/style.css");
 
-header {
-	background: black;
-}
+.site-title {
+	color: red;
+};
