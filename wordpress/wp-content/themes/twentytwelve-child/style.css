@@ -10,6 +10,27 @@ Version:        0.1.0
 
 @import url("../twentytwelve/style.css");
 
+.site-header {
+	background-color: #F47940;
+}
+
+.site-header h2 {
+	color:black;
+}
+
+.main-navigation li a {
+	color:black;
+}
 .site-title {
-	color: red;
-};
+	background-color: #F47940;
+
+}
+
+.nav-menu {
+	color:black;
+
+}
+
+.site-header h1 a {
+	color: black;
+}
