@@ -10,6 +10,6 @@ Version:        0.1.0
 
 @import url("../twentytwelve/style.css");
 
-#top-left {
-	width: 0;
+header {
+	background: black;
 }
