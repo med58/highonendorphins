@@ -30,7 +30,7 @@ get_header(); ?>
 
         $args = array(
             // Change these category SLUGS to suit your use.
-            'category_name' => 'politics', 
+            'category_name' => 'politics', "news", 
             'paged' => $paged
         );
 
