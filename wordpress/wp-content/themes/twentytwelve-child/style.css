@@ -44,7 +44,7 @@ footer[role="contentinfo"] a:hover {
 }
 
 .site-content article {
-	border-bottom: 4px double black;
+	border-bottom: 20px solid #F47940;
 margin-bottom: 72px;
 margin-bottom: 5.142857143rem;
 padding-bottom: 24px;
