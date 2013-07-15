@@ -90,10 +90,32 @@ footer[role="contentinfo"] a {
 	color: black;
 }
 
-.entry-header .entry-title a:hover {
+a.comment-reply-link:hover, a.comment-edit-link:hover {
+	color: black;
+} 
+
+.entry-header .entry-title a:hover, a.comment-reply-link, a.comment-edit-link {
 	color:#F47940;
 }
 
+li.bypostauthor cite span {
+	color: white;
+background-color: #F47940;
+background-image: none;
+border: 1px solid #F47940;
+border-radius: 2px;
+box-shadow: none;
+padding: 0;
+
+}
+
+.comments-area article header time {
+line-height: 1.714285714;
+text-decoration: none;
+font-size: 12px;
+font-size: 0.857142857rem;
+color: black;
+}
 .main-navigation .current_page_item > a{
 	color:white;
 }

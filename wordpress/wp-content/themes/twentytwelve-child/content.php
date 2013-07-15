@@ -40,7 +40,7 @@
 
 		<footer class="entry-meta">
 			<div class="comments-link">
-					<?php comments_popup_link( '<span class="leave-reply">' . __( 'Comment on it!', 'twentytwelve' ) . '</span>', __( '1 Reply', 'twentytwelve' ), __( '% Replies', 'twentytwelve' ) ); ?>
+					<?php comments_popup_link( '<span class="leave-reply">' . __( 'Comment on it!', 'twentytwelve' ) . '</span>', __( '1 Comment', 'twentytwelve' ), __( '% Comments', 'twentytwelve' ) ); ?>
 				</div><!-- .comments-link -->
 				<?php twentytwelve_entry_meta(); ?>
 			<?php edit_post_link( __( 'Edit', 'twentytwelve' ), '<span class="edit-link">', '</span>' ); ?>
