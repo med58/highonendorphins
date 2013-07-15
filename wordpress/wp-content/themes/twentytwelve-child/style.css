@@ -16,6 +16,13 @@ Version:        0.1.0
 
 }
 
+.main-navigation {
+	margin-top: 24px;
+	margin-top: 1.714285714rem;
+	text-align: center;
+	
+}
+
 #page {
 	width: 100%;
 }
@@ -79,7 +86,7 @@ footer[role="contentinfo"] a {
 }
 
 .main-navigation li a:hover {
-	color:white;
+	color: #F47940;
 }
 .site-title {
 	background-color: #F47940;
@@ -117,7 +124,7 @@ font-size: 0.857142857rem;
 color: black;
 }
 .main-navigation .current_page_item > a{
-	color:white;
+	color:#F47940;
 }
 
 .masthead {
@@ -127,3 +134,10 @@ color: black;
 div {
 	margin-bottom: 2.571428571rem;
 }
+
+hgroup, .nav-wrapper {
+	width: 960px;
+	margin: 0 auto;
+	clear: both;
+}
+
