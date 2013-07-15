@@ -16,7 +16,29 @@ Version:        0.1.0
 
 }
 
+#page {
+	width: 100%;
+}
 
+.entry-header .entry-title a {
+	color: black;
+}
+
+a {
+	color: #F47940;
+}
+
+#wrapper {
+	
+}
+
+.widget-title {
+	color: black;
+}
+
+.widget-area .widget a {
+	color: #F47940;
+}
 
 .main-navigation div.nav-menu > ul{
 	border:none;
