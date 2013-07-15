@@ -8,6 +8,9 @@ Template Name: Page Of Posts Pop
 */
 
 get_header(); ?>
+<?php get_sidebar(); ?>
+<?php wp_footer(); ?>
+
 
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
@@ -51,6 +54,7 @@ get_header(); ?>
 
 
 		</div><!-- #content -->
+    <?php get_footer(); ?>
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>

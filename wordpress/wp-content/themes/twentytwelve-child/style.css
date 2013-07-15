@@ -20,7 +20,7 @@ Version:        0.1.0
 	width: 100%;
 }
 
-.entry-header .entry-title a {
+.entry-header, .entry-title a {
 	color: black;
 }
 
@@ -28,11 +28,42 @@ a {
 	color: #F47940;
 }
 
-#wrapper {
-	
+footer.entry-meta {
+	color: black;
+}
+
+.comments-link a,  .entry-meta a {
+	color: #F47940;
+}
+.comments-link a:hover, .entry-meta a:hover, a:hover .widget-area:hover {
+	color: black;
+}
+
+footer[role="contentinfo"] a:hover {
+	color: black;
+}
+
+.site-content article {
+	border-bottom: 4px double black;
+margin-bottom: 72px;
+margin-bottom: 5.142857143rem;
+padding-bottom: 24px;
+padding-bottom: 1.714285714rem;
+word-wrap: break-word;
+-webkit-hyphens: auto;
+-moz-hyphens: auto;
+hyphens: auto;
+
+}
+
+footer[role="contentinfo"] a {
+	color: #F47940;
 }
 
 .widget-title {
+	color: black;
+}
+.widget-title .widget {
 	color: black;
 }
 
@@ -46,9 +77,21 @@ a {
 .main-navigation li a {
 	color:black;
 }
+
+.main-navigation li a:hover {
+	color:white;
+}
 .site-title {
 	background-color: #F47940;
 
+}
+
+.widget-area .widget a:hover {
+	color: black;
+}
+
+.entry-header .entry-title a:hover {
+	color:#F47940;
 }
 
 .main-navigation .current_page_item > a{

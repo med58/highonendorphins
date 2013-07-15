@@ -8,6 +8,8 @@ Template Name: Page Of Posts Sport
 */
 
 get_header(); ?>
+<?php get_sidebar(); ?>
+<?php wp_footer(); ?>
 
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">

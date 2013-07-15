@@ -8,6 +8,8 @@ Template Name: Page Of Post Pol
 */
 
 get_header(); ?>
+<?php get_sidebar(); ?>
+<?php wp_footer(); ?>
 
   <div id="primary" class="content-area">
     <div id="content" class="site-content" role="main">
@@ -30,7 +32,7 @@ get_header(); ?>
 
         $args = array(
             // Change these category SLUGS to suit your use.
-            'category_name' => 'politics', "news", 
+            'category_name' => 'politics, news', 
             'paged' => $paged
         );
 
