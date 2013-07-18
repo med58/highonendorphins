@@ -16,11 +16,14 @@ Version:        0.1.0
 
 }
 
+
 .main-navigation {
 	margin-top: 24px;
 	margin-top: 1.714285714rem;
 	text-align: center;
-	
+	float: right;
+
+
 }
 
 #page {

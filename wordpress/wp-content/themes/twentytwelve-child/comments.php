@@ -56,8 +56,8 @@ if ( post_password_required() )
 	<?php endif; // have_comments() ?>
 
 	<?php comment_form(array(
-   'title_reply' => 'Leave a Reply',
-   'title_reply_to' => 'Leave a Reply to %s',
+   'title_reply' => 'Comment on It!',
+   'title_reply_to' => 'Respond to %s',
 ));
 
  ?>
