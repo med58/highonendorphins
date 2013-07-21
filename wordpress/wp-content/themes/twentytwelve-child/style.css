@@ -26,6 +26,12 @@ Version:        0.1.0
 
 }
 
+.widget-area {
+float: right;
+width: 26.041666667%;
+clear: right;
+}
+
 #page {
 	width: 100%;
 }
