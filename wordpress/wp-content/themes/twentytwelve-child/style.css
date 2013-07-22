@@ -144,7 +144,20 @@ div {
 	margin-bottom: 2.571428571rem;
 }
 
-
+.header-search {
+    float: right;
+    margin-top: -50px;
+}
+@media (max-width: 650px) {
+    .header-search {
+        margin-top:5px;
+        text-align:center;
+        float:none;
+    }
+    .main-navigation  {
+        clear:both;
+    }
+}
 
 hgroup, .nav-wrapper {
 	width: 960px;
