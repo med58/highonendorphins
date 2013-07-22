@@ -26,6 +26,10 @@ Version:        0.1.0
 
 }
 
+.screen-reader-text {
+	display: none;
+}
+
 .widget-area {
 float: right;
 width: 26.041666667%;
