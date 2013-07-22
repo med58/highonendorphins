@@ -29,7 +29,7 @@ Version:        0.1.0
 .widget-area {
 float: right;
 width: 26.041666667%;
-clear: right;
+clear: right;h
 }
 
 #page {
@@ -144,9 +144,11 @@ div {
 	margin-bottom: 2.571428571rem;
 }
 
+
+
 hgroup, .nav-wrapper {
 	width: 960px;
 	margin: 0 auto;
-	clear: both;
+	clear: none;
 }
 
