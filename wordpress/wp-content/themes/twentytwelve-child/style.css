@@ -16,6 +16,11 @@ Version:        0.1.0
 
 }
 
+.site-content {
+float: left;
+width: 65.104166667%;
+margin: 0 auto;
+}
 
 .main-navigation {
 	margin-top: 24px;
