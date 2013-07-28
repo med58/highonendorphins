@@ -36,6 +36,9 @@ margin: 0 auto;
 
 }
 
+.wrapper {
+	margin: 0 auto;
+}
 .screen-reader-text {
 	display: none;
 }
